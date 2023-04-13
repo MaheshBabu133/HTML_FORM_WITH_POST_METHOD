@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            color: aliceblue;
+            background-color: blue;
+            border-radius:5px 0px 5px 0px ;
+        }
+    form,fieldset
+    {
+        display: inline;
+        border-radius: 5px;
+        background-color: rgb(102, 206, 201);
+        color: aliceblue;
+    }
+    legend,input
+    {
+        text-align: center;
+        border: 2px solid rebeccapurple;
+        border-radius:5px 0px 5px 0px ;
+        background: linear-gradient(60deg,black,red);
+        padding: 10px;
+        font-size: 20px;
+        color: rgb(247, 247, 255);
+
+    }
+    input
+    {
+        border-radius: 5px;
+        font-size: 20px;
+        background: rgb(230, 162, 162);
+    }
+
+    #one
+    {
+        padding: 5px;
+        font-size: 20px;
+        border-radius:5px 0px 5px 0px ;
+        background:linear-gradient(60deg,rgb(60, 255, 0),white);
+        color: rgb(193, 76, 23);
+    }
+    body
+    {
+        background: rgb(82, 255, 226);
+    }
+    label
+    {
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>This is first Html Form</h1>
+        
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Login Form</legend>
+                {% csrf_token %}
+            <label for="un">UserName</label> 
+            <input type="text" name="un" id="un"> <br><br>
+            <label for="pw">Possword</label>
+            <input type="possward" name="pw" id="pw"><br><br>
+            <input type="submit" value="submit" id="one">
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>
